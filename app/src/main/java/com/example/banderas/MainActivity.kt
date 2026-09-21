@@ -29,10 +29,8 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun BanderaMexico() {
     Row(modifier = Modifier.fillMaxSize()) {
-        Box(modifier = Modifier.weight(1f).fillMaxHeight().background(Color.Green))
-        Box(modifier = Modifier.weight(1f).fillMaxHeight().background(Color.White), contentAlignment = Alignment.Center) {
-           Image(painter = painterResource(id = R.drawable.logomex), contentDescription = "Escudo de Mexico", modifier = Modifier.size(120.dp))
-        }
+        Box(modifier = Modifier.weight(1f).fillMaxHeight().background(Color.Blue))
+        Box(modifier = Modifier.weight(1f).fillMaxHeight().background(Color.White))
         Box(modifier = Modifier.weight(1f).fillMaxHeight().background(Color.Red))
     }
 }
