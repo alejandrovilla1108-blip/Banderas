@@ -29,7 +29,7 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun BanderaMexico() {
     Row(modifier = Modifier.fillMaxSize()) {
-        Box(modifier = Modifier.weight(1f).fillMaxHeight().background(Color.Blue))
+        Box(modifier = Modifier.weight(1f).fillMaxHeight().background(Color.Green))
         Box(modifier = Modifier.weight(1f).fillMaxHeight().background(Color.White))
         Box(modifier = Modifier.weight(1f).fillMaxHeight().background(Color.Red))
     }
