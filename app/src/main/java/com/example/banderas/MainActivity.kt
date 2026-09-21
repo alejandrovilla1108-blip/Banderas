@@ -26,8 +26,8 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun BanderaEspaña() {
     Column(modifier = Modifier.fillMaxSize()) {
-        Box(modifier = Modifier.weight(1f).fillMaxWidth().background(Color.Red))
         Box(modifier = Modifier.weight(2f).fillMaxWidth().background(Color.Yellow))
+        Box(modifier = Modifier.weight(1f).fillMaxWidth().background(Color.Blue))
         Box(modifier = Modifier.weight(1f).fillMaxWidth().background(Color.Red))
     }
 }
