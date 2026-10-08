@@ -1,7 +1,7 @@
 package com.example.banderas.Screen
 
 import androidx.compose.runtime.Composable
-import java.lang.reflect.Modifier
+import androidx.compose.ui.Modifier
 
 @Composable
 fun BanderaScreen(modifier: Modifier){
