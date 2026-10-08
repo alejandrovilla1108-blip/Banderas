@@ -1,5 +1,6 @@
 package com.example.banderas
 
+import android.R
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -48,25 +49,15 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun BanderaScreen(modifier: Modifier = Modifier) {
-    Box(modifier = Modifier.fillMaxSize().background(Color(0xFF009B3A))) {
-        Canvas(modifier = Modifier.fillMaxWidth(0.8f).fillMaxHeight(0.6f)) {
-            val rombo = Path().apply {
-                moveTo(size.width / 2, 0f)
-                lineTo(size.width, size.height / 2)
-                lineTo(size.width / 2, size.height)
-                lineTo(0f, size.height / 2)
-                close()
-            }
-            drawPath(path = rombo, color = Color(0xFFFFDF00))
-            drawCircle(
-                color = Color(0xFF002776),
-                radius = size.minDimension * 0.22f,
-                center = center
-            )
-        }
-    }
+       Canvas(modifier = Modifier) {
+           drawCircle(
+               color = Color.Red,
+               radius = size.minDimension * 0.22f,
+               center = center
+           )
+       }
 }
-@Preview(showBackground = true)
+@Preview(showBackground = true, widthDp = 300, heightDp = 200 )
 @Composable
 fun BanderaScreenPreview() {
     BanderasTheme {
